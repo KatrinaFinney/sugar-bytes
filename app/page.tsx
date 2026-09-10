@@ -4,21 +4,21 @@ const programs = [
     title: "Clear explanations. Full technical depth.",
     copy: "Tutorials, debugging lessons, and practical breakdowns for developers who want to understand what their code is actually doing.",
     cta: "Explore Learn",
-    href: "#learn",
+    href: "/learn",
   },
   {
     eyebrow: "THE LAB",
     title: "Build it. Break it. Understand it.",
     copy: "Runnable demos, integrations, experiments, and reference projects built to explore how software behaves outside the happy path.",
     cta: "Enter the Lab",
-    href: "#lab",
+    href: "/lab",
   },
   {
     eyebrow: "DX CHECK",
     title: "Developer tools, tested like a developer.",
     copy: "Hands-on reviews of APIs, SDKs, docs, onboarding, and error states — with useful praise, useful criticism, and concrete recommendations.",
     cta: "See DX Checks",
-    href: "#dx-check",
+    href: "/dx-check",
   },
 ];
 
@@ -32,16 +32,16 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Sugar Bytes home">
+        <a className="brand" href="/" aria-label="Sugar Bytes home">
           <span className="brand-mark">SB</span>
           <span>Sugar Bytes</span>
         </a>
         <nav className="nav" aria-label="Primary navigation">
-          <a href="#learn">Learn</a>
-          <a href="#lab">Lab</a>
-          <a href="#dev-voices">Dev Voices</a>
-          <a href="#dx-check">DX Check</a>
-          <a href="#speaking">Speaking</a>
+          <a href="/learn">Learn</a>
+          <a href="/lab">Lab</a>
+          <a href="/dev-voices">Dev Voices</a>
+          <a href="/dx-check">DX Check</a>
+          <a href="/speaking">Speaking</a>
         </nav>
         <a className="button button-small" href="#about">About</a>
       </header>
@@ -58,8 +58,8 @@ export default function Home() {
             developer experience, and the tools we build with.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#dev-voices">Watch Dev Voices</a>
-            <a className="text-link" href="#learn">Start learning →</a>
+            <a className="button" href="/dev-voices">Watch Dev Voices</a>
+            <a className="text-link" href="/learn">Start learning →</a>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
               Dev Voices starts with the people doing the work: frontend, backend, infrastructure, security,
               and DevRel practitioners sharing what good developer experience means to them.
             </p>
-            <a className="text-link" href="#developer-tea">Meet Developer Tea →</a>
+            <a className="text-link" href="/dev-voices">Explore Dev Voices →</a>
           </article>
 
           <aside className="tea-card" id="developer-tea">
@@ -115,6 +115,7 @@ export default function Home() {
             <div className="tea-questions">
               {teaQuestions.map((question) => <span key={question}>{question}</span>)}
             </div>
+            <a className="text-link" href="/developer-tea">Get the Developer Tea →</a>
           </aside>
         </div>
       </section>
@@ -127,7 +128,7 @@ export default function Home() {
         </div>
         <div className="program-grid">
           {programs.map((program) => (
-            <article className="program-card" id={program.eyebrow === "THE LAB" ? "lab" : program.eyebrow === "DX CHECK" ? "dx-check" : undefined} key={program.eyebrow}>
+            <article className="program-card" key={program.eyebrow}>
               <p className="kicker">{program.eyebrow}</p>
               <h3>{program.title}</h3>
               <p>{program.copy}</p>
@@ -155,6 +156,7 @@ export default function Home() {
         <div>
           <p className="kicker">SPEAKING</p>
           <h2>Technical talks for people who actually build things.</h2>
+          <a className="text-link" href="/speaking">View speaking topics →</a>
         </div>
         <div className="talk-list">
           <article><span>01</span><div><h3>Breaking APIs on Purpose</h3><p>Authentication failures, bad requests, rate limits, retries, and learning to debug from the failure outward.</p></div></article>
