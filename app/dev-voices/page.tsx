@@ -1,3 +1,6 @@
+import EditorialCard from "../../components/EditorialCard";
+import { episodes } from "../../lib/editorial";
+
 export default function DevVoicesPage() {
   const questions = [
     "What are you building right now?",
@@ -6,6 +9,7 @@ export default function DevVoicesPage() {
     "What developer-experience problem do companies underestimate?",
     "If you could change one thing about your daily tools, what would it be?",
   ];
+  const published = episodes.filter((episode) => episode.series === "Dev Voices");
 
   return (
     <main>
@@ -22,25 +26,17 @@ export default function DevVoicesPage() {
         </div>
 
         <div className="voices-grid">
-          <article className="feature-card">
-            <div className="feature-label">SERIES FORMAT</div>
-            <h2>15–20 minutes. Real experience. Useful takeaways.</h2>
-            <p>Each episode centers the developer, not the product pitch. The goal is to listen for patterns, disagreements, and lessons that can make tools and technical education better.</p>
-          </article>
-          <aside className="tea-card">
-            <p className="tea-icon">☕</p><p className="kicker">DEVELOPER TEA</p><h2>One question. No corporate answer.</h2>
-            <p>The quick-hit field format for meetups, conferences, and hallway conversations.</p>
-            <a className="text-link" href="/developer-tea">See Developer Tea →</a>
-          </aside>
+          <article className="feature-card"><div className="feature-label">SERIES FORMAT</div><h2>15–20 minutes. Real experience. Useful takeaways.</h2><p>Each episode centers the developer, not the product pitch. The goal is to listen for patterns, disagreements, and lessons that can make tools and technical education better.</p></article>
+          <aside className="tea-card"><p className="tea-icon">☕</p><p className="kicker">DEVELOPER TEA</p><h2>One question. No corporate answer.</h2><p>The quick-hit field format for meetups, conferences, and hallway conversations.</p><a className="text-link" href="/developer-tea">See Developer Tea →</a></aside>
         </div>
       </section>
 
       <section className="section muted-section">
-        <div className="section-heading"><p className="kicker">THE CORE QUESTIONS</p><h2>What we keep asking developers.</h2></div>
-        <div className="program-grid">{questions.map((question, index) => <article className="program-card" key={question}><p className="kicker">0{index + 1}</p><h3>{question}</h3></article>)}</div>
+        <div className="section-heading"><p className="kicker">EPISODES</p><h2>{published.length ? "Latest conversations." : "The first conversations are being recorded."}</h2><p>{published.length ? "Developer stories, recurring themes, and practical takeaways from the people doing the work." : "We’ll publish real guests here as interviews are completed and approved. No filler profiles, no fake social proof."}</p></div>
+        {published.length ? <div className="program-grid">{published.map((episode) => <EditorialCard key={episode.slug} eyebrow="DEV VOICES" title={episode.title} copy={episode.dek} meta={episode.guest ? `${episode.guest.name} · ${episode.guest.role}` : episode.event} href={`/dev-voices/${episode.slug}`} />)}</div> : <div className="empty-state"><p>First target: five developers across frontend, backend, infrastructure, security, and DevRel.</p></div>}
       </section>
 
-      <section className="section community-section"><div className="community-card"><p className="kicker">COMING SOON</p><h2>The first five voices.</h2><p>Frontend, backend, infrastructure, security, and DevRel perspectives will become the first Sugar Bytes developer-insight set.</p><div className="tag-row"><span>Frontend</span><span>Backend</span><span>Infrastructure</span><span>Security</span><span>DevRel</span></div></div></section>
+      <section className="section"><div className="section-heading"><p className="kicker">THE CORE QUESTIONS</p><h2>What we keep asking developers.</h2></div><div className="program-grid">{questions.map((question, index) => <article className="program-card" key={question}><p className="kicker">0{index + 1}</p><h3>{question}</h3></article>)}</div></section>
 
       <footer><div className="brand"><span className="brand-mark">SB</span><span>Sugar Bytes</span></div><p>Build better. Understand deeper.</p><p>© 2026 Sugar Bytes</p></footer>
     </main>
