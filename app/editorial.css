@@ -1,0 +1,31 @@
+.editorial-card { min-height: 330px; }
+.editorial-meta { margin-top: 8px; font-size: 13px; color: var(--lavender) !important; }
+.empty-state { border: 1px dashed var(--line); border-radius: 24px; padding: 30px; color: var(--muted); background: rgba(255,255,255,.02); }
+.page-shell { min-height: 100vh; }
+.page-hero { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 110px 0 70px; }
+.page-hero h1 { font-size: clamp(48px, 7vw, 88px); line-height: .98; margin: 0; letter-spacing: -.05em; }
+.article-shell { width: min(820px, calc(100% - 40px)); margin: 0 auto; padding: 20px 0 120px; }
+.article-shell > section { margin: 54px 0; }
+.article-shell h2 { font-size: clamp(30px, 4vw, 46px); }
+.article-actions { display: flex; gap: 18px; align-items: center; margin-top: 48px; }
+.video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-placeholder { min-height: 360px; display: grid; align-content: center; border: 1px dashed var(--line); border-radius: 24px; padding: 36px; background: var(--panel); }
+.video-placeholder h3 { font-size: 30px; margin: 0 0 8px; }
+.video-placeholder p:last-child { color: var(--muted); max-width: 600px; }
+.guest-card { display: grid; grid-template-columns: .75fr 1.25fr; gap: 36px; border: 1px solid var(--line); border-radius: 24px; padding: 30px; background: var(--panel); }
+.guest-card h2 { margin: 0 0 6px; }
+.guest-card p { color: var(--muted); }
+.question-list { display: grid; gap: 12px; }
+.question-list p { margin: 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; color: var(--muted); }
+.dx-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.dx-grid .program-card { min-height: 220px; }
+.callout-card { border: 1px solid var(--line); border-radius: 20px; padding: 22px; margin: 14px 0; background: linear-gradient(145deg, rgba(189,164,255,.06), rgba(255,79,163,.05)); }
+.callout-card p { margin: 0; }
+@media (max-width: 700px) {
+  .page-hero, .article-shell { width: min(100% - 28px, 820px); }
+  .page-hero { padding-top: 72px; }
+  .guest-card, .dx-grid { grid-template-columns: 1fr; }
+  .video-placeholder { min-height: 260px; padding: 26px; }
+  .article-actions { align-items: flex-start; flex-direction: column; }
+}
