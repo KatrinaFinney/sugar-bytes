@@ -26,10 +26,141 @@ footer .brand-mark {
   flex-basis: 38px;
 }
 
+.hero-brand-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 30px;
+  padding: 34px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 79, 163, .17), transparent 34%),
+    radial-gradient(circle at 85% 25%, rgba(189, 164, 255, .13), transparent 34%),
+    rgba(19, 16, 26, .9);
+  box-shadow: 0 26px 110px rgba(0,0,0,.42);
+}
+
+.hero-brand-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -18% -42% 18%;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(155, 92, 255, .13);
+  filter: blur(54px);
+  pointer-events: none;
+}
+
+.hero-logo-lockup {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(128px, 42%) 1fr;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.hero-logo-mark {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  background: url('/sugar-bytes-mark.png') center / contain no-repeat;
+  filter: drop-shadow(0 18px 30px rgba(255,79,163,.18));
+}
+
+.hero-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: .82;
+  font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.075em;
+  transform: translateY(-1px);
+}
+
+.hero-wordmark-sugar,
+.hero-wordmark-bytes {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-wordmark-sugar {
+  color: #fff;
+  font-size: clamp(42px, 4.7vw, 68px);
+  text-shadow: 0 4px 24px rgba(255,255,255,.07);
+  -webkit-text-stroke: 1px rgba(104, 67, 180, .25);
+}
+
+.hero-wordmark-bytes {
+  margin-top: 12px;
+  font-size: clamp(47px, 5.1vw, 75px);
+  background: linear-gradient(180deg, #ff8cdd 0%, #ff4fd0 45%, #9d67ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(88, 51, 161, .36);
+  filter: drop-shadow(0 5px 18px rgba(151, 82, 255, .14));
+}
+
+.hero-promise {
+  position: relative;
+  z-index: 1;
+  padding-top: 26px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.hero-promise p {
+  margin: 7px 0;
+}
+
+.hero-promise .terminal-result {
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .hero-brand-panel {
+    max-width: 680px;
+  }
+
+  .hero-logo-lockup {
+    grid-template-columns: minmax(124px, 34%) 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   .brand-mark {
     width: 38px;
     height: 38px;
     flex-basis: 38px;
+  }
+
+  .hero-brand-panel {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .hero-logo-lockup {
+    grid-template-columns: 104px 1fr;
+    gap: 17px;
+    padding-bottom: 24px;
+  }
+
+  .hero-wordmark-sugar {
+    font-size: clamp(34px, 10.5vw, 47px);
+  }
+
+  .hero-wordmark-bytes {
+    margin-top: 9px;
+    font-size: clamp(38px, 11.5vw, 52px);
+  }
+
+  .hero-promise {
+    padding-top: 22px;
+    font-size: 11px;
+    overflow-x: auto;
   }
 }
