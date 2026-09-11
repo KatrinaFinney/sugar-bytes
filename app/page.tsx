@@ -172,17 +172,17 @@ export default function Home() {
       <section className="section about-section" id="about">
         <div>
           <p className="kicker">ABOUT SUGAR BYTES</p>
-          <h2>Made by a developer. Built around developers.</h2>
+          <h2>Built for developers. Informed by developers.</h2>
         </div>
         <div>
           <p>
-            Sugar Bytes is an independent developer education and advocacy project created by software engineer
-            and Developer Advocate Katrina Finney.
+            Sugar Bytes is an independent developer education and advocacy platform focused on making technical ideas clearer, more useful, and easier to put into practice.
           </p>
           <p>
-            The mission is simple: make technical ideas easier to understand without making them less technical.
-            Through code, experiments, conversations, and community, Sugar Bytes explores what developers build,
-            where they struggle, and how developer tools can serve them better. It is intentionally growing in public, with each new piece adding another useful layer rather than just another page.
+            Through tutorials, experiments, developer conversations, community insight, and hands-on DX analysis, Sugar Bytes examines how software gets built, where developers encounter friction, and what better developer experiences can look like.
+          </p>
+          <p>
+            The platform is designed to grow alongside the community it serves: publishing what is useful, testing what is unclear, and turning real developer experience into better questions, better resources, and better tools.
           </p>
         </div>
       </section>
