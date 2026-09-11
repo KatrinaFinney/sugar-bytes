@@ -8,9 +8,9 @@ export default function LabPage() {
     },
     {
       title: "API Rescue",
-      copy: "A planned AI-assisted debugging tool for API failures, focused on useful diagnosis instead of vague error summaries.",
+      copy: "An AI-assisted debugging experiment for API failures, focused on useful diagnosis instead of vague error summaries.",
       href: "#",
-      status: "Coming soon",
+      status: "In development",
     },
   ];
 
@@ -26,7 +26,7 @@ export default function LabPage() {
         <div className="section-heading">
           <p className="kicker">THE LAB</p>
           <h1>Build it. Break it. Understand it.</h1>
-          <p>Runnable experiments, integrations, and reference projects built to explore how software behaves outside the happy path.</p>
+          <p>Runnable experiments, integrations, and reference projects built to explore how software behaves outside the happy path. Some are complete case studies. Others are active builds that will change as the idea gets tested.</p>
         </div>
 
         <div className="program-grid">
@@ -49,7 +49,7 @@ export default function LabPage() {
         <div className="section-heading">
           <p className="kicker">LAB RULE</p>
           <h2>Every build should teach something.</h2>
-          <p>The point is not to collect side projects. Each experiment should produce a runnable example, a technical explanation, and at least one lesson another developer can use.</p>
+          <p>The point is not to collect side projects. Each experiment should produce a runnable example, a technical explanation, and at least one lesson another developer can use. The Lab will stay intentionally small enough that every project can be explained, revisited, and improved.</p>
         </div>
       </section>
 
