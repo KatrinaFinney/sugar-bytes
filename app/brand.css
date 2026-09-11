@@ -82,17 +82,19 @@ footer .brand-mark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: .9;
+  gap: 6px;
+  line-height: 1;
   font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
   font-weight: 900;
   letter-spacing: -0.075em;
-  transform: translateY(-1px);
+  transform: none;
 }
 
 .hero-wordmark-sugar,
 .hero-wordmark-bytes {
   display: block;
   white-space: nowrap;
+  line-height: 1;
 }
 
 .hero-wordmark-sugar {
@@ -103,9 +105,9 @@ footer .brand-mark {
 }
 
 .hero-wordmark-bytes {
-  margin-top: 12px;
+  margin-top: 0;
   display: inline-block;
-  padding-bottom: .06em;
+  padding-bottom: .14em;
   font-size: clamp(47px, 5.1vw, 75px);
   background: linear-gradient(
     90deg,
@@ -173,7 +175,8 @@ footer .brand-mark {
   }
 
   .hero-wordmark-bytes {
-    margin-top: 9px;
+    margin-top: 0;
+    padding-bottom: .16em;
     font-size: clamp(38px, 11.5vw, 52px);
   }
 
