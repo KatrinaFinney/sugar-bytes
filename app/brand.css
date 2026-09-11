@@ -82,7 +82,7 @@ footer .brand-mark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: .82;
+  line-height: .9;
   font-family: ui-rounded, "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
   font-weight: 900;
   letter-spacing: -0.075em;
@@ -104,23 +104,23 @@ footer .brand-mark {
 
 .hero-wordmark-bytes {
   margin-top: 12px;
+  display: inline-block;
+  padding-bottom: .06em;
   font-size: clamp(47px, 5.1vw, 75px);
   background: linear-gradient(
-    135deg,
-    #ddd0ff 0%,
-    #c3a6ff 24%,
-    #a676ff 50%,
-    #b95fff 74%,
-    #ef6ad4 100%
+    90deg,
+    #ddd2ff 0%,
+    #c5abff 30%,
+    #a77cff 58%,
+    #c06cff 78%,
+    #f174d7 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(99, 67, 170, .4);
-  text-shadow:
-    0 0 12px rgba(166, 118, 255, .13),
-    0 5px 16px rgba(115, 75, 196, .08);
-  filter: drop-shadow(0 4px 14px rgba(132, 86, 222, .1));
+  -webkit-text-stroke: .75px rgba(105, 72, 180, .26);
+  text-shadow: 0 0 10px rgba(184, 132, 255, .1);
+  filter: none;
 }
 
 .hero-promise {
