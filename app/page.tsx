@@ -50,7 +50,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker">DEVELOPER EDUCATION + ADVOCACY</p>
           <h1>
-            Big ideas, served byte-sized.
+            Sweet concepts, served byte-sized.
             <span> Easier to digest.</span>
           </h1>
           <p className="hero-text">
