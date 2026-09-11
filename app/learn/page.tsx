@@ -10,13 +10,13 @@ export default function LearnPage() {
       title: "Idempotency Without the Textbook Definition",
       copy: "A practical explanation of how duplicate events happen and how to design around them.",
       href: "#",
-      status: "Coming soon",
+      status: "In the editorial queue",
     },
     {
       title: "Why Your Integration Works Locally and Fails in Production",
       copy: "A field guide to environment differences, auth, network behavior, logs, and debugging the real deployment.",
       href: "#",
-      status: "Coming soon",
+      status: "In the editorial queue",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function LearnPage() {
         <div className="section-heading">
           <p className="kicker">LEARN</p>
           <h1>Clear explanations. Full technical depth.</h1>
-          <p>Tutorials, debugging lessons, and practical breakdowns for developers who want to understand what their code is actually doing.</p>
+          <p>Tutorials, debugging lessons, and practical breakdowns for developers who want to understand what their code is actually doing. The library is intentionally small and useful, with new pieces added as they earn their place.</p>
         </div>
 
         <div className="program-grid">
@@ -55,7 +55,7 @@ export default function LearnPage() {
         <div className="community-card">
           <p className="kicker">EDITORIAL PROMISE</p>
           <h2>Easier to understand does not mean watered down.</h2>
-          <p>Sugar Bytes starts from real implementation details, then explains them with enough context that developers can use the idea, debug it, and make better decisions with it.</p>
+          <p>Sugar Bytes starts from real implementation details, then explains them with enough context that developers can use the idea, debug it, and make better decisions with it. New tutorials will build on that standard rather than filling space for the sake of a publishing schedule.</p>
         </div>
       </section>
 
