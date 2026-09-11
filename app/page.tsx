@@ -49,7 +49,10 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="kicker">DEVELOPER EDUCATION + ADVOCACY</p>
-          <h1>Sweet concepts, served byte-sized.</h1>
+          <h1 className="hero-title">
+            Sweet concepts, served
+            <span className="hero-title-byte">byte-sized.</span>
+          </h1>
           <p className="hero-text">
             Practical experiments, developer conversations, and technical education about APIs, AI,
             developer experience, and the tools we build with.
