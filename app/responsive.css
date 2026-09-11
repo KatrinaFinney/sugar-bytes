@@ -93,7 +93,7 @@
   footer,
   .page-hero,
   .article-shell {
-    width: calc(100% - 24px);
+    width: calc(100% - 32px);
     max-width: none;
   }
 
@@ -157,12 +157,18 @@
     gap: 24px;
   }
 
+  .voices-grid {
+    width: min(100%, 380px);
+    margin-inline: auto;
+  }
+
   .feature-card,
   .tea-card,
   .program-card,
   .community-card {
     width: 100%;
-    padding: 28px 24px;
+    margin-inline: auto;
+    padding: 30px 26px;
     border-radius: 20px;
   }
 
@@ -292,6 +298,6 @@
   .guest-card,
   .empty-state,
   .callout-card {
-    padding: 26px 22px;
+    padding: 28px 26px;
   }
 }
