@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./editorial.css";
 import "./brand.css";
+import "./responsive.css";
 
 export const metadata: Metadata = {
   title: "Sugar Bytes | Developer Education & Advocacy",
