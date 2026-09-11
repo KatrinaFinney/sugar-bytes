@@ -71,7 +71,14 @@ p { line-height: 1.7; }
 .kicker { font-size: 12px; letter-spacing: .18em; font-weight: 900; color: var(--pink-soft); margin-bottom: 16px; }
 .hero h1, h2, h3 { letter-spacing: -0.04em; }
 .hero h1 { font-size: clamp(58px, 8vw, 106px); line-height: .92; margin: 0; max-width: 800px; }
-.hero h1 span { display: block; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.66); }
+.hero-title-byte {
+  display: block;
+  margin-top: .08em;
+  font-size: .78em;
+  line-height: .95;
+  color: var(--text);
+  -webkit-text-stroke: 0;
+}
 .hero-text { max-width: 680px; color: var(--muted); font-size: 19px; margin: 28px 0; }
 .hero-actions { display: flex; gap: 20px; align-items: center; }
 
@@ -156,6 +163,7 @@ footer .brand { color: var(--text); }
   .site-header > .button { display: none; }
   .hero { padding-top: 72px; }
   .hero h1 { font-size: 56px; }
+  .hero-title-byte { font-size: .84em; }
   .hero-text { font-size: 17px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .proof-strip { justify-content: flex-start; overflow-x: auto; }
