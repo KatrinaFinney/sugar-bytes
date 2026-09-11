@@ -108,7 +108,7 @@ p { line-height: 1.7; }
 .split-heading { max-width: none; display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: end; }
 .split-heading > p { margin: 0; }
 
-.voices-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 24px; }
+.voices-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 24px; align-items: stretch; }
 .feature-card, .tea-card, .program-card, .community-card {
   border: 1px solid var(--line); border-radius: 28px; padding: 38px; background: var(--panel);
 }
@@ -116,10 +116,19 @@ p { line-height: 1.7; }
 .feature-card::before { content: "DEV"; position: absolute; top: -18px; right: 20px; font-size: 150px; font-weight: 950; color: rgba(255,255,255,.025); }
 .feature-card h3, .tea-card h3, .program-card h3 { font-size: 30px; margin: 8px 0 12px; }
 .feature-label { position: absolute; top: 28px; left: 28px; border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; font-size: 11px; font-weight: 900; color: var(--pink-soft); }
-.tea-card { background: radial-gradient(circle at top right, rgba(255,79,163,.16), transparent 38%), var(--panel-2); }
-.tea-icon { font-size: 54px; margin: 0 0 18px; }
-.tea-questions { display: grid; gap: 10px; margin-top: 26px; }
-.tea-questions span { border: 1px solid var(--line); border-radius: 14px; padding: 13px 15px; color: var(--muted); font-size: 14px; background: rgba(255,255,255,.02); }
+.tea-card {
+  background: radial-gradient(circle at top right, rgba(255,79,163,.16), transparent 38%), var(--panel-2);
+  display: flex;
+  flex-direction: column;
+  padding: 34px 38px 36px;
+}
+.tea-card .kicker { margin: 0 0 14px; }
+.tea-card h3 { margin: 0 0 18px; line-height: 1.08; }
+.tea-card > p:not(.kicker):not(.tea-icon) { margin: 0; }
+.tea-icon { font-size: 40px; line-height: 1; margin: 0 0 28px; }
+.tea-questions { display: grid; gap: 12px; margin: 28px 0 22px; }
+.tea-questions span { border: 1px solid var(--line); border-radius: 14px; padding: 14px 15px; color: var(--muted); font-size: 14px; background: rgba(255,255,255,.02); }
+.tea-card > .text-link { align-self: flex-start; margin-top: 2px; }
 
 .muted-section { width: 100%; max-width: none; padding-inline: max(20px, calc((100vw - 1180px)/2)); background: #0e0b13; }
 .program-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -153,6 +162,7 @@ footer .brand { color: var(--text); }
   .split-heading, .voices-grid, .speaking, .about-section { grid-template-columns: 1fr; gap: 32px; }
   .program-grid { grid-template-columns: 1fr; }
   .program-card { min-height: 260px; }
+  .tea-card { padding: 32px; }
   footer { grid-template-columns: 1fr; }
 }
 
@@ -170,5 +180,9 @@ footer .brand { color: var(--text); }
   .section { padding: 76px 0; }
   .feature-card, .tea-card, .program-card, .community-card { padding: 26px; border-radius: 22px; }
   .feature-card { min-height: 360px; }
+  .tea-card { padding: 26px; }
+  .tea-icon { font-size: 34px; margin-bottom: 22px; }
+  .tea-card h3 { margin-bottom: 14px; }
+  .tea-questions { gap: 10px; margin: 24px 0 20px; }
   .terminal-body { padding: 24px; font-size: 12px; overflow-x: auto; }
 }
