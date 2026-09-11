@@ -7,7 +7,7 @@
   footer,
   .page-hero,
   .article-shell {
-    width: min(100% - 40px, 760px);
+    width: min(100% - 32px, 760px);
   }
 
   .site-header {
@@ -20,9 +20,9 @@
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 42px;
+    gap: 38px;
     min-height: auto;
-    padding: 82px 0 68px;
+    padding: 72px 0 60px;
     text-align: center;
   }
 
@@ -46,7 +46,7 @@
   .hero h1 {
     max-width: 680px;
     margin-inline: auto;
-    font-size: clamp(58px, 11vw, 88px);
+    font-size: clamp(54px, 10vw, 82px);
   }
 
   .hero-title-byte {
@@ -55,7 +55,7 @@
 
   .hero-text {
     max-width: 620px;
-    margin: 26px auto;
+    margin: 24px auto;
   }
 
   .hero-actions,
@@ -73,7 +73,7 @@
   .speaking,
   .about-section {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 30px;
   }
 
   .split-heading,
@@ -84,28 +84,29 @@
     text-align: center;
   }
 
-  .program-grid {
-    grid-template-columns: 1fr;
+  .program-grid,
+  .voices-grid,
+  .talk-list,
+  .about-section > div:last-child {
+    width: 100%;
     max-width: 680px;
     margin-inline: auto;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
   }
 
   .program-card,
   .feature-card,
   .tea-card,
   .community-card {
+    width: 100%;
     text-align: left;
   }
 
   .program-card {
-    min-height: 240px;
-  }
-
-  .voices-grid,
-  .talk-list,
-  .about-section > div:last-child {
-    max-width: 680px;
-    margin-inline: auto;
+    min-height: 220px;
   }
 
   .proof-strip {
@@ -120,12 +121,12 @@
   }
 
   .page-hero {
-    padding: 84px 0 54px;
+    padding: 76px 0 50px;
     text-align: center;
   }
 
   .page-hero h1 {
-    font-size: clamp(48px, 10vw, 74px);
+    font-size: clamp(46px, 9vw, 70px);
   }
 
   .article-shell {
@@ -140,11 +141,12 @@
   footer,
   .page-hero,
   .article-shell {
-    width: min(100% - 28px, 620px);
+    width: calc(100% - 20px);
+    max-width: none;
   }
 
   .site-header {
-    min-height: 70px;
+    min-height: 68px;
   }
 
   .site-header > .button {
@@ -156,35 +158,47 @@
   }
 
   .hero {
-    padding: 60px 0 54px;
-    gap: 32px;
+    padding: 46px 0 46px;
+    gap: 28px;
+  }
+
+  .hero-copy,
+  .section-heading,
+  .page-hero {
+    width: 100%;
+    max-width: none;
   }
 
   .kicker {
     font-size: 10px;
-    letter-spacing: .15em;
+    letter-spacing: .14em;
   }
 
   .hero h1 {
-    font-size: clamp(46px, 15vw, 64px);
-    line-height: .92;
+    width: 100%;
+    max-width: none;
+    font-size: clamp(40px, 12vw, 54px);
+    line-height: .94;
+    letter-spacing: -.045em;
   }
 
   .hero-title-byte {
-    font-size: .76em;
+    font-size: .78em;
     line-height: .98;
+    margin-top: .1em;
   }
 
   .hero-text {
+    width: min(100%, 34rem);
     font-size: 16px;
-    line-height: 1.65;
-    max-width: 34rem;
+    line-height: 1.6;
+    margin: 22px auto;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-    width: min(100%, 320px);
+    width: min(100%, 330px);
     margin-inline: auto;
   }
 
@@ -195,108 +209,124 @@
   }
 
   .hero-brand-panel {
-    padding: 20px;
-    border-radius: 22px;
+    width: 100%;
+    padding: 18px;
+    border-radius: 20px;
   }
 
   .hero-logo-lockup {
-    grid-template-columns: 86px 1fr;
+    grid-template-columns: 88px 1fr;
     gap: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .hero-wordmark-sugar {
-    font-size: clamp(30px, 9.7vw, 42px);
+    font-size: clamp(29px, 9vw, 40px);
   }
 
   .hero-wordmark-bytes {
-    font-size: clamp(34px, 10.8vw, 47px);
+    font-size: clamp(33px, 10vw, 45px);
     padding-bottom: .18em;
   }
 
   .hero-promise {
     padding-top: 18px;
     font-size: 10px;
-    line-height: 1.65;
+    line-height: 1.6;
     text-align: left;
   }
 
   .proof-strip {
-    padding: 16px 14px;
-    gap: 12px 18px;
-    font-size: 10px;
-    letter-spacing: .14em;
+    padding: 14px 10px;
+    gap: 10px 16px;
+    font-size: 9px;
+    letter-spacing: .12em;
   }
 
   .section {
-    padding: 68px 0;
+    padding: 54px 0;
   }
 
   .section-heading {
-    margin-bottom: 34px;
+    margin-bottom: 28px;
   }
 
   .section-heading h2,
   .community-card h2,
   .speaking h2,
   .about-section h2 {
-    font-size: clamp(34px, 11vw, 50px);
+    font-size: clamp(30px, 9.5vw, 42px);
+    line-height: 1.03;
+  }
+
+  .section-heading > p:not(.kicker),
+  .split-heading > p,
+  .community-card > p,
+  .about-section > div:last-child {
+    font-size: 15px;
+    line-height: 1.62;
   }
 
   .feature-card,
   .tea-card,
   .program-card,
   .community-card {
-    padding: 24px;
-    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 18px;
   }
 
   .feature-card {
-    min-height: 320px;
+    min-height: 280px;
+  }
+
+  .program-card {
+    min-height: 200px;
   }
 
   .feature-card h3,
   .tea-card h3,
   .program-card h3 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .feature-label {
-    top: 20px;
-    left: 20px;
+    top: 18px;
+    left: 18px;
   }
 
   .muted-section {
-    padding-inline: 14px;
+    padding-inline: 10px;
   }
 
   .talk-list article {
-    grid-template-columns: 34px 1fr;
-    gap: 12px;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+    padding: 22px 0;
   }
 
   .talk-list h3 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .page-hero {
-    padding: 62px 0 40px;
+    padding: 52px 0 34px;
   }
 
   .page-hero h1 {
-    font-size: clamp(42px, 13vw, 60px);
+    font-size: clamp(38px, 11.5vw, 54px);
   }
 
   .article-shell {
-    padding-bottom: 82px;
+    padding-bottom: 72px;
   }
 
   .article-shell > section {
-    margin: 42px 0;
+    margin: 36px 0;
   }
 
   .article-shell h2 {
-    font-size: clamp(28px, 9vw, 38px);
+    font-size: clamp(27px, 8vw, 36px);
   }
 
   .article-actions {
@@ -314,12 +344,13 @@
   .guest-card,
   .empty-state,
   .callout-card {
-    padding: 22px;
-    border-radius: 18px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
   }
 
   .video-placeholder {
-    min-height: 230px;
+    min-height: 220px;
     text-align: center;
   }
 
@@ -333,22 +364,36 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .hero h1 {
-    font-size: clamp(42px, 14.5vw, 54px);
+    font-size: clamp(38px, 11.6vw, 49px);
   }
 
   .hero-logo-lockup {
-    grid-template-columns: 74px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 12px;
+    text-align: center;
+  }
+
+  .hero-logo-mark {
+    width: 96px;
+  }
+
+  .hero-wordmark {
+    align-items: center;
   }
 
   .hero-wordmark-sugar {
-    font-size: 29px;
+    font-size: 34px;
   }
 
   .hero-wordmark-bytes {
-    font-size: 33px;
+    font-size: 38px;
+  }
+
+  .hero-promise {
+    font-size: 9.5px;
   }
 
   .feature-card,
@@ -359,6 +404,6 @@
   .guest-card,
   .empty-state,
   .callout-card {
-    padding: 20px;
+    padding: 18px;
   }
 }
