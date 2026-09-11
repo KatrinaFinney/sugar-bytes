@@ -96,12 +96,22 @@ footer .brand-mark {
 .hero-wordmark-bytes {
   margin-top: 12px;
   font-size: clamp(47px, 5.1vw, 75px);
-  background: linear-gradient(180deg, #ff8cdd 0%, #ff4fd0 45%, #9d67ff 100%);
+  background: linear-gradient(
+    135deg,
+    #d7c8ff 0%,
+    #bd9bff 22%,
+    #9b6cff 48%,
+    #b85cff 72%,
+    #ff6bd6 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(88, 51, 161, .36);
-  filter: drop-shadow(0 5px 18px rgba(151, 82, 255, .14));
+  -webkit-text-stroke: 1px rgba(106, 67, 183, .48);
+  text-shadow:
+    0 0 16px rgba(183, 118, 255, .18),
+    0 6px 20px rgba(255, 91, 202, .08);
+  filter: drop-shadow(0 5px 18px rgba(151, 82, 255, .12));
 }
 
 .hero-promise {
