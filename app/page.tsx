@@ -63,11 +63,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-card" aria-label="Sugar Bytes editorial promise">
-          <div className="terminal-top">
-            <span></span><span></span><span></span>
+        <div className="hero-brand-panel" aria-label="Sugar Bytes brand and editorial promise">
+          <div className="hero-logo-lockup" aria-label="Sugar Bytes">
+            <span className="hero-logo-mark" aria-hidden="true"></span>
+            <span className="hero-wordmark" aria-hidden="true">
+              <span className="hero-wordmark-sugar">Sugar</span>
+              <span className="hero-wordmark-bytes">Bytes</span>
+            </span>
           </div>
-          <div className="terminal-body">
+          <div className="hero-promise">
             <p className="comment">// the Sugar Bytes promise</p>
             <p><span className="code-keyword">const</span> explanation = <span className="code-string">"clear"</span>;</p>
             <p><span className="code-keyword">const</span> depth = <span className="code-string">"still technical"</span>;</p>
