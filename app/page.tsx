@@ -16,7 +16,7 @@ const programs = [
   {
     eyebrow: "DX CHECK",
     title: "Developer tools, tested like a developer.",
-    copy: "Hands-on reviews of APIs, SDKs, docs, onboarding, and error states — with useful praise, useful criticism, and concrete recommendations.",
+    copy: "Hands-on reviews of APIs, SDKs, docs, onboarding, and error states with useful praise, useful criticism, and concrete recommendations.",
     cta: "See DX Checks",
     href: "/dx-check",
   },
@@ -58,7 +58,7 @@ export default function Home() {
             developer experience, and the tools we build with.
           </p>
           <div className="hero-actions">
-            <a className="button" href="/dev-voices">Watch Dev Voices</a>
+            <a className="button" href="/dev-voices">Explore Dev Voices</a>
             <a className="text-link" href="/learn">Start learning →</a>
           </div>
         </div>
@@ -99,11 +99,11 @@ export default function Home() {
 
         <div className="voices-grid">
           <article className="feature-card">
-            <div className="feature-label">COMING FIRST</div>
-            <h3>Five developers. One question. Very different answers.</h3>
+            <div className="feature-label">GROWING SERIES</div>
+            <h3>Different developers. Shared friction. Better questions.</h3>
             <p>
-              Dev Voices starts with the people doing the work: frontend, backend, infrastructure, security,
-              and DevRel practitioners sharing what good developer experience means to them.
+              Dev Voices brings together perspectives from frontend, backend, infrastructure, security,
+              and DevRel to surface the patterns that are easy to miss when everyone stays inside their own stack.
             </p>
             <a className="text-link" href="/dev-voices">Explore Dev Voices →</a>
           </article>
@@ -113,7 +113,7 @@ export default function Home() {
             <p className="kicker">DEVELOPER TEA</p>
             <h3>One question. No corporate answer.</h3>
             <p>
-              Quick-hit interviews from meetups, conferences, and developer events — the useful, funny,
+              Quick-hit interviews from meetups, conferences, and developer events. The useful, funny,
               occasionally spicy takes developers give when you ask the right question.
             </p>
             <div className="tea-questions">
@@ -128,7 +128,7 @@ export default function Home() {
         <div className="section-heading">
           <p className="kicker">THE WORK</p>
           <h2>Teach. Build. Advocate.</h2>
-          <p>Every piece should leave a developer with something useful — an idea, an example, a better question, or code they can actually run.</p>
+          <p>Every piece should leave a developer with something useful: an idea, an example, a better question, or code they can actually run. The library will grow, but usefulness stays the filter.</p>
         </div>
         <div className="program-grid">
           {programs.map((program) => (
@@ -148,7 +148,7 @@ export default function Home() {
           <h2>Developer advocacy happens around developers.</h2>
           <p>
             Meetup interviews, event notes, hallway conversations, quick questions, and community insights
-            from Atlanta and beyond. PyATL is one of the first places we’ll be taking Sugar Bytes into the field.
+            from Atlanta and beyond. Sugar Bytes starts local, listens closely, and expands through the communities and conversations that make the work better.
           </p>
           <div className="tag-row">
             <span>Meetups</span><span>Interviews</span><span>Event recaps</span><span>Community insights</span>
@@ -182,7 +182,7 @@ export default function Home() {
           <p>
             The mission is simple: make technical ideas easier to understand without making them less technical.
             Through code, experiments, conversations, and community, Sugar Bytes explores what developers build,
-            where they struggle, and how developer tools can serve them better.
+            where they struggle, and how developer tools can serve them better. It is intentionally growing in public, with each new piece adding another useful layer rather than just another page.
           </p>
         </div>
       </section>
