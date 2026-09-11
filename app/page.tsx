@@ -50,8 +50,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="kicker">DEVELOPER EDUCATION + ADVOCACY</p>
           <h1>
-            Technical ideas,
-            <span> easier to digest.</span>
+            Big ideas, served byte-sized.
+            <span> Easier to digest.</span>
           </h1>
           <p className="hero-text">
             Practical experiments, developer conversations, and technical education about APIs, AI,
